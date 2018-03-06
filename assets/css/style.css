@@ -1,0 +1,22 @@
+.jumbotron {
+    width: 90%;
+}
+
+.row {
+    margin: 10px;
+}
+
+.card {
+    width: 90%;
+}
+
+.card-header {
+    background-color: black;
+    color: white;
+}
+
+#search {
+    background-color: grey;
+    color: white;
+    border: none;
+}
