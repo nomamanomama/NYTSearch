@@ -1,5 +1,7 @@
 .jumbotron {
     width: 90%;
+    background-color: black;
+    color: white;
 }
 
 .row {
