@@ -34,15 +34,20 @@ $(document).ready( function() {
             var result = response.response.docs;
             for (var i= 0; i< result.length;i++){
                 var newDiv = $("<div>");
-                var headline = $("<h2>").text(result[i].headline);
+                var headline = $("<h2>").text(result[i].headline.main);
+                console.log(headline);
                 var snippet = $("<p>").text(result[i].snippet);
+                console.log(snippet);
                 var web_url = $("<a>").attr("src", result[i].web_url);
+                console.log(web_url);
                 var pub = $("<p>").text(result[i].pub_date);
-                var byline = $("<p>").text("By: " + result[i].byline.original);
+                console.log(pub);
+                var byline = $("<p>").text(result[i].byline.original);
+                console.log(byline);
 
                 newDiv.append(headline, snippet, web_url, pub, byline);
                 
-                $("#articles-display").newDiv;
+                $("#articles-display").append(newDiv);
             }
         }); 
 
